@@ -13,6 +13,12 @@
       "skillPath": "skills/.curated/figma-implement-design/SKILL.md",
       "computedHash": "78b017706f6e3732a1f9e87968cdc8ce7f31b0a59741f7d0f7cf9a531fe47e7a"
     },
+    "figma-use": {
+      "source": "nexu-io/open-design",
+      "sourceType": "github",
+      "skillPath": "skills/figma-use/SKILL.md",
+      "computedHash": "c758d069679db2ded9b4921ccf00d89c28db0c2a828eb742d4a4020081f87632"
+    },
     "motion-framer": {
       "source": "freshtechbro/claudedesignskills",
       "sourceType": "github",
