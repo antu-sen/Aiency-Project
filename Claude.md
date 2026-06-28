@@ -1,3 +1,32 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Development Commands
+
+```bash
+npm run dev       # Start Vite dev server (localhost:5173)
+npm run build     # Production build → dist/
+npm run lint      # Run ESLint on all .js/.jsx files
+npm run preview   # Preview the production build locally
+```
+
+No test runner is configured yet. Add Vitest when tests are needed.
+
+## Architecture
+
+**Entry points:**
+- `index.html` → `src/main.jsx` → `src/App.jsx` (root component)
+- `src/index.css` — global styles; Tailwind v4 is imported here via `@import "tailwindcss"`
+
+**Tailwind v4 note:** This project uses `@tailwindcss/vite` (Tailwind v4), not Tailwind v3. There is no `tailwind.config.js`. Custom theme tokens (colors, fonts, spacing) are defined inside `src/index.css` using the `@theme {}` directive — not in a config file.
+
+**Planned packages (not yet installed):** Framer Motion and React Router DOM are listed in the tech stack and should be installed with `npm install` when first needed.
+
+**ESLint:** Configured in `eslint.config.js` with `eslint-plugin-react-hooks` and `eslint-plugin-react-refresh`. Targets `.js` and `.jsx` files.
+
+---
+
 # Figma Implementation Rules
 * Always treat the provided Figma design as the single source of truth.
 * Match the layout, spacing, typography, colors, and component hierarchy as closely as possible.
