@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+/* ─── Design tokens ────────────────────────────────────────────────────────── */
+@theme {
+  /* Font families */
+  --font-rubik: "Rubik", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-clash: "Clash Grotesk Variable", sans-serif;
+
+  /* Brand colours */
+  --color-primary: #3fbbe0;
+  --color-dark: #141414;
+  --color-light: #fafafa;
+  --color-purple: #8a79f1;
+  --color-teal: #3fac92;
+}
+
+/* ─── Base reset ───────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: #fafafa;
+  color: #141414;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
